@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Discourse HTML Options</title>
+    <style>
+table {
+  margin: 2em 0 0;
+  border-collapse: collapse;
+  border: none;
+}
+th, td {
+  padding: 0;
+}
+th, label {
+  font-weight: bold;
+  text-align: left;
+}
+p, caption {
+  margin: 0 0 .6em;
+  text-align: left;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+input {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  display: inline-block;
+  width: 40em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+button {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  margin-left: 1em;
+}
+th + th {
+  padding-left: 1em;
+}
+th, td {
+  padding-bottom: 6px;
+}
+    </style>
+  </head>
+  <body>
+    <p>Add a <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns">match pattern</a> for a Discourse instance to enable URL rewriting.</p>
+    <form>
+      <label>Pattern</label>
+      <input type="text"><button type="submit">Add</button>
+    </form>
+    <table>
+      <caption>Enabled match patterns</caption>
+      <thead>
+        <tr>
+          <th>Pattern</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <template>
+      <tr>
+        <td><input type="text" readonly></td>
+        <td><button>Remove</button></td>
+      </tr>
+    </template>
+    <script src="options.js"></script>
+  </body>
+</html>

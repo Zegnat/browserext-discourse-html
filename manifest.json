@@ -1,0 +1,30 @@
+{
+    "name": "Discourse HTML",
+    "version": "1.0",
+    "description": "Redirects Discourse community websites to their HTML versions, rather than their js;dr defaults.",
+    "icons": {
+        "32": "logo/discourse-32.png",
+        "64": "logo/discourse-64.png"
+    },
+    "developer": {
+        "name": "Martijn van der Ven",
+        "url": "https://vanderven.se/martijn/"
+    },
+    "background": {
+        "scripts": [
+            "src/background.js"
+        ],
+        "persistent": true
+    },
+    "options_ui": {
+        "browser_style": true,
+        "page": "src/options.html"
+    },
+    "manifest_version": 2,
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "storage"
+    ]
+}
